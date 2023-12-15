@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.underline-animation {
+		@apply relative inline-block overflow-hidden;
+	}
+
+	.underline-animation::after {
+		content: '';
+		@apply absolute bottom-0 h-0.5 w-full -translate-x-full transform bg-black;
+		transition: transform 0.3s ease-in-out;
+		visibility: hidden;
+	}
+
+	.underline-animation:hover::after {
+		@apply translate-x-0;
+		visibility: visible;
+		transition:
+			transform 0.3s ease-in-out,
+			visibility 0s linear 0.3s;
+	}
+}

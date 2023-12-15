@@ -1,0 +1,47 @@
+{
+	"name": "casdy",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@tailwindcss/typography": "^0.5.10",
+		"@types/markdown-it": "^13.0.7",
+		"@types/node": "^20.10.4",
+		"@typescript-eslint/eslint-plugin": "^6.14.0",
+		"@typescript-eslint/parser": "^6.14.0",
+		"autoprefixer": "^10.4.16",
+		"cssnano": "^6.0.2",
+		"eslint": "^8.55.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"postcss": "^8.4.32",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"prettier-plugin-tailwindcss": "^0.5.9",
+		"svelte": "next",
+		"svelte-check": "^3.6.2",
+		"tailwindcss": "^3.3.6",
+		"tslib": "^2.6.2",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.9"
+	},
+	"type": "module",
+	"dependencies": {
+		"@octokit/graphql": "^7.0.2",
+		"@octokit/rest": "^20.0.2",
+		"@upstash/redis": "^1.25.2",
+		"clsx": "^2.0.0",
+		"markdown-it": "^14.0.0",
+		"node-emoji": "^2.1.3"
+	}
+}
