@@ -19,7 +19,7 @@
 		<div class="flex flex-col items-center justify-center gap-8">
 			<div class="text-center sm:mx-auto sm:w-10/12 md:mt-12 md:w-2/3">
 				<h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 md:text-6xl">
-					Build <span class="text-pink-600"> Zero JS Portfolio</span>  with your
+					Build <span class="text-pink-600"> Zero JS Portfolio</span> with your
 					<span class="text-blue-600">Github.</span>
 				</h1>
 				<p class="mt-8 text-gray-600 dark:text-gray-300">

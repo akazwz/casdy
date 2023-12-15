@@ -47,7 +47,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
 	const user = data.user as User;
 	user.status.emoji = emmoji.get(user.status.emoji) || user.status.emoji;
-	const res = await fetch(user.avatarUrl)
+	const res = await fetch(user.avatarUrl);
 	const contentType = res.headers.get('content-type');
 	const avatarArrayBuffer = await res.arrayBuffer();
 	const avatar = `data:${contentType};base64,${Buffer.from(avatarArrayBuffer).toString('base64')}`;
